@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Cars</title>
+</head>
+<body>
+	<center>
+		<h1>Авторизация</h1>
+	<form action="https://fom.in.ua/echo" method="post">
+		
+		<input type="email" name="email" placeholder="E-mail" required>
+		<input type="password" name="password" placeholder="Пароль" required>
+		<div><input type="checkbox">Запомнить меня?</div>
+        <input type="submit" value="Вход">
+	</form>
+	<h1>Регистрация</h1>
+	<form action="https://fom.in.ua/echo">
+		<input type="email" placeholder="E-mail">
+		<input type="password" name="password" placeholder="Пароль" required>
+		<input type="password" name="password" placeholder="Подтвердите пароль" required>
+		<input type="submit" value="Регистрация">
+	</form>
+	<h1>Поиск</h1>
+	<form action="https://fom.in.ua/echo">
+
+		<label for="carType">Тип кузова</label>
+		<select name="type" id="carType">
+			<option value="sedan">Седан</option>
+			<option value="universal">Универсал</option>
+			<option value="coupe">Купе</option>
+			<option value="cabriolet">Кабриолет</option>
+			<option value="limousine">Лимузин</option>
+			<option value="off-road">Внедорожник</option>
+		</select>
+
+		<label for="carModel">Марка</label>        
+		<select name="carmodel" id="carModel">
+			<option value="Mercedes">Mercedes</option>
+			<option value="BMW">BMW</option>
+			<option value="Lexus">Lexus</option>
+			<option value="Mazda">Mazda</option>
+			<option value="Audi">Audi</option>
+			<option value="Ferrari">Ferrari</option>
+			<option value="Toyota">Toyota</option>
+			<option value="Mitsubishi">Mitsubishi</option>
+			<option value="Jeep">Jeep</option>
+		</select>
+		
+		<label for="producingСountry">Страна производитель</label>
+		<select name="producingСountry" id="producingСountry">
+			<option value="Germany">Германия</option>
+			<option value="USA">Америка</option>
+			<option value="Italy">Италия</option>
+			<option value="Japan">Япония</option>
+		</select>
+
+		<br><br>
+
+		<label for="priceFrom">Цена</label>
+		 <input type="number" id="priceFrom" min="0"  placeholder="От">
+		 <input type="number" id="priceTo" min="0"  placeholder="До">
+		 <br><br>
+		 <label for="yearFrom">Год</label>
+		 <input type="number" id="yearFrom" min="1970" max="2020" placeholder="От">
+		 <input type="number" id="yearTo" min="1970" max="2020" placeholder="До">
+
+		 <br><br>
+		
+		<label for="condition"><strong>Состояние</strong></label>
+		<div id="condition">
+			<input type="checkbox" name="con1" value="1" id="con1">
+			<label for="con1">Нерастаможенные</label>
+			<input type="checkbox" name="con2" value="2" id="con2">
+			<label for="con2">Битые</label>
+			<input type="checkbox" name="con3" value="3" id="con3">
+			<label for="con3">Конфискат</label>
+			<input type="checkbox" name="con4" value="4" id="con4">
+			<label for="con4">Не на ходу</label>
+			<input type="checkbox" name="con5" value="5" id="con5">
+			<label for="con5">В кредите</label>
+		</div>
+		
+		<label for="typeOfFuel"><strong>Тип топлива</strong></label>
+		<div id="typeOfFuel">
+			<input type="checkbox" name="petrol" id="petrol" value="1">
+			<label for="petrol">Бензин</label>
+			<input type="checkbox" name="diesel" id="diesel" value="2">
+			<label for="diesel">Дизель</label>
+			<input type="checkbox" name="petrol_gas" id="petrol_gas" value="3">
+			<label for="petrol_gas">Газ/Бензин</label>
+			<input type="checkbox" name="gibrid" id="gibrid" value="4">
+			<label for="gibrid">Гибрид</label>
+			<input type="checkbox" name="electro" id="electro" value="5">
+			<label for="electro">Электро</label>
+		</div>
+
+		<label for="typeOfTransmission"><strong>КПП</strong></label>
+		<div id="typeOfTransmission">
+			<input type="checkbox" name="gearbox1" id="gearbox1" value="1">
+			<label for="gearbox1">Ручная</label>
+			<input type="checkbox" name="gearbox2" id="gearbox2" value="2">
+			<label for="gearbox2">Ручная/Автомат</label>
+			<input type="checkbox" name="gearbox3" id="gearbox3" value="3">
+			<label for="gearbox3">Типтроник</label>
+			<input type="checkbox" name="gearbox4" id="gearbox4" value="4">
+			<label for="gearbox4">Адаптивная</label>
+			<input type="checkbox" name="gearbox5" id="gearbox5" value="5">
+			<label for="gearbox5">Вариатор</label>
+		</div>
+
+		<label for="color"><strong>Цвет</strong></label>
+		<div id="color">
+			<select name="color">
+				<option value="black">Черный</option>
+				<option value="green">Зеленый</option>
+				<option value="blue">Синий</option>
+				<option value="yellow">Желтый</option>
+				<option value="gray">Серый</option>
+				<option value="white">Белый</option>
+				<option value="red">Красный</option>
+			</select>
+		</div>
+
+		<label for="comfort"><strong>Комфорт</strong></label>
+		<div id="comfort">
+			<input type="checkbox" name="comf1" id="comf1" value="1">
+			<label for="comf1">Бортовой компьютер</label>
+			<input type="checkbox" name="comf2" id="comf2" value="2">
+			<label for="comf2">Запуск кнопкой</label>
+			<input type="checkbox" name="comf3" id="comf3" value="3">
+			<label for="comf3">Кожаный салон</label>
+			<input type="checkbox" name="comf4" id="comf4" value="4">
+			<label for="comf4">Круиз контроль</label>
+			<input type="checkbox" name="comf5" id="comf5" value="5">
+			<label for="comf5">Усилитель руля</label>
+			<input type="checkbox" name="comf6" id="comf6" value="6">
+			<label for="comf6">Подогрев зеркал</label>
+			<input type="checkbox" name="comf7" id="comf7" value="7">
+			<label for="comf7">Подогрев сидений</label>
+			<input type="checkbox" name="comf8" id="comf8" value="8">
+			<label for="comf8">Электропакет</label>
+			<input type="checkbox" name="comf9" id="comf9" value="9">
+			<label for="comf9">Климат контроль</label>
+			<input type="checkbox" name="comf10" id="comf10" value="10">
+			<label for="comf10">Кондиционер</label>
+			<input type="checkbox" name="comf11" id="comf11" value="11">
+			<label for="comf11">Парктроник</label>
+			<input type="checkbox" name="comf12" id="comf12" value="12">
+			<label for="comf12">Люк</label>
+		</div>
+
+		<input type="submit" value="Поиск">
+	</form>
+	</center>
+</body>
+</html>
